@@ -1,12 +1,13 @@
 ---
-layout: posts
-comments: true
 excerpt_separator: 
   - "<!--more-->"
 title: "기계의 학습법"
 tag: 
-  - 기계학습
-  - 머신러닝
+  - "기계학습"
+  - "머신러닝"
+toc: true
+last_modified_at: 2018-06-19
+comments: true
 ---
 
 
