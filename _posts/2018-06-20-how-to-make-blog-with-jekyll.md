@@ -1,6 +1,6 @@
 ---
 title: "지킬, 깃허브로 블로그 만들기"
-excerpt: "1. 블로그 생성하기"
+excerpt: "블로그 생성하기"
 header: 
  overlay_image: /assets/images/triangular.jpeg
 categories:
