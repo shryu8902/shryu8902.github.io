@@ -3,9 +3,11 @@ title: "기계의 학습법"
 excerpt: "인공지능과 기계학습"
 header: 
  overlay_image: /assets/images/triangular.jpeg
+categories:
+  - "Machine Learning"
 tag: 
-  - "기계학습"
   - "머신러닝"
+  - "기계학습"
 toc: true
 last_modified_at: 2018-06-19
 comments: true
