@@ -8,8 +8,8 @@ main:
     url: /categories/
   - title: "Tags"
     url: /tags/
-  - title: "Sitemap"
-    url: /sitemap/
+  #- title: "Sitemap"
+  #  url: /sitemap/
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
   # - title: "Sample Posts"
