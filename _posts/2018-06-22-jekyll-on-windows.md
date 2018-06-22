@@ -34,7 +34,7 @@ comments: true
 |{% raw %}![alt](/assets/images/ruby_command.jpg){% endraw %}|
 |*윈도우 검색창에서 Ruby 검색 후 루비 콘솔을 실행한다.*|
 
-콘솔창에서 gem 명령어를 통해 지킬과 실행에 필요한 패키지들을 설치한다.
+콘솔창에서 `gem` 명령어를 통해 지킬과 실행에 필요한 패키지들을 설치한다.
 ```
 gem install jekyll
 gem install minima
