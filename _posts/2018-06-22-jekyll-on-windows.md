@@ -22,7 +22,7 @@ comments: true
 
 [루비 인스톨러 for windows](https://rubyinstaller.org/downloads/)의 다운로드 페이지에서 윈도우용 루비 + 개발자킷(DevKit) 설치 프로그램을 다운로드  후 설치한다. 루비가 먼저 설치되고 (PATH 설정 포함) 이어서 개발자 킷 설치 과정이 이루어진다. 
 
-|{% raw %}![alt](/assets/images/Ruby_windows.png){% endraw %}|
+|{% raw %}![alt](/assets/images/Ruby_windows.jpg){% endraw %}|
 |*루비 인스톨러 홈페이지에서 Ruby+Devkit 2.4.4-1을 다운로드한다.*|
 
 

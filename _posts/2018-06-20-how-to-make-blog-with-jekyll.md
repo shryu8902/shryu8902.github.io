@@ -40,7 +40,7 @@ comments: true
 ## 4. 블로그 생성하기
   블로그를 생성하기 위해서 가장 먼저해야 하는 일은 [깃허브](https://github.com/)에 가입하는 것입니다. 가입이 완료되면 [지킬 테마 모음 사이트](http://jekyllthemes.org)에 가셔서 맘에드는 테마를 고르시면 됩니다. 지금 이 블로그는 **Minimal Mistakes** 테마를  기준으로 작성되었는데, 테마 선택 페이지에 들어가서 홈 페이지로 들어가시면 해당 테마의 깃허브 저장소가 뜹니다.
   
-|{% raw %}![alt](/assets/images/jekylltheme.png){% endraw %}|
+|{% raw %}![alt](/assets/images/jekylltheme.jpg){% endraw %}|
 |*깃허브 테마 소개 페이지*|
 
 해당 테마 깃허브 페이지 위 쪽을 잘 살펴보면, 포크 (Fork) 버튼이 있는데, 깃허브 로그인 한 상태에서 포크를 누르면 해당 테마의 파일들을 나의 깃허브 저장소로 복사를 하게됩니다.
@@ -53,7 +53,7 @@ comments: true
 
 원래대로라면 포크된 저장소 이름이 아래의 스크린샷처럼 테마 이름과 같게 되어있습니다.
 
-|{% raw %}![alt](/assets/images/reponame.png){% endraw %}|
+|{% raw %}![alt](/assets/images/reponame.jpg){% endraw %}|
 |*깃허브 페이지를 통해 블로그를 생성하기 위해서 repository 이름 변경은 필수적이다.*|
 
 깃허브 페이지 서비스를 이용하기 위해서는 이제 해당 저장소의 이름을 다음과 같이 변경해주시면 됩니다.
@@ -62,7 +62,7 @@ comments: true
 
 Rename을 눌러서 설정 변경하고 정상적으로 진행되는 경우 설정 페이지 아래쪽으로 스크롤을 내려보시면 Github pages가 활성화 되었다고 초록색으로 뜹니다. 
 
-|{% raw %}![alt](/assets/images/pages.png){% endraw %}|
+|{% raw %}![alt](/assets/images/pages.jpg){% endraw %}|
 |*깃허브 페이지 활성화*|
 
 정상적으로 진행이 되었으면, 해당 주소 (깃허브 계정.github.io)로 접속을 하게되면 해당 테마 페이지의 기본 설정으로 블로그 개설이 됩니다. 해당 블로그의 기본적인 설정은 \_config.yml 파일에서 정의가 되는데  제가 사용하는 **Minimal Mistakes** 테마에서는 다음과 같이 기본적인 정보를 설정하게 됩니다.
@@ -91,7 +91,7 @@ author:
 
 잠시 후에 다시 본인의 깃허브 블로그 주소 (깃허브 계정.github.io)로 접속을 하면 수정 내용이 반영된 아래의 결과가 나오게됩니다.
 
-|{% raw %}![alt](/assets/images/firstblog.png){% endraw %}|
+|{% raw %}![alt](/assets/images/firstblog.jpg){% endraw %}|
 |*블로그 생성 결과*|
 
 ## 5. 요약
