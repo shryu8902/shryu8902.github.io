@@ -19,7 +19,7 @@ locale                   : "ko"
 title                    : "Shryu8902's Blog"
 title_separator          : "-"
 name                     : "Seunghyoung Ryu"
-description              : "An amazing website."
+description              : "개인 블로그입니다."
 url                      : "https://shryu8902.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "shryu8902/shryu8902.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -111,9 +111,9 @@ author:
   codepen          :
   dribbble         :
   flickr           :
-  facebook         : "https://www.facebook.com/seunghyoungryu"
+  facebook         : "seunghyoungryu"
   foursquare       :
-  github           :
+  github           : "shryu8902"
   gitlab           :
   google_plus      :
   keybase          :
