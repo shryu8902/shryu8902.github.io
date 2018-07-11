@@ -12,6 +12,7 @@ tag:
 toc: true
 last_modified_at: 2018-07-11
 comments: true
+mathjax: true
 ---
 
 
