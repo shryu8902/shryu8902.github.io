@@ -1,7 +1,7 @@
 ---
-title: "[Itemz] 다이슨 V10 구매기"
+title: "[Itemz] 다이슨 무선청소기 구매를 위한 가이드"
 strapline: "Dyson V10"
-description: "다이슨 V10 구매 비교"
+description: "다이슨 V10 V8 비교 및 정리"
 header:
  image: /assets/images/dyson-v10.jpg
  caption: "Photo credit: [Dyson](https://kr.dyson.com)"
