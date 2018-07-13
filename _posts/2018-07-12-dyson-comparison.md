@@ -3,7 +3,8 @@ title: "[Itemz] 다이슨 V10 구매기"
 strapline: "Dyson V10"
 description: "다이슨 V10 구매 비교"
 header:
- overlay_image: /assets/images/triangular.jpeg
+ image: /assets/images/dyson-v10.jpg
+ caption: "Photo credit: [Dyson](https://kr.dyson.com)"
 categories:
   - "Item"
 tag:
@@ -35,7 +36,7 @@ comments: true
 특히 기존 V8보다 20분이나 늘어난 사용시간을 주요 장점으로 이야기하고 있는데, 이부분에 대해서는 추후에 짚고 넘어가자. 인터넷 후기들을 살펴보면, 다른 사항들보다 먼지통 구조가 바뀐것을 큰 장점으로 꼽는 듯하다. 
 
 ## 2. V10 패키지별 비교
-V10은 현재 다양한 패키지로 판매가 되고있는데, 각 패키지 별 차이점은 다음과 같다.
+V10은 현재 다양한 패키지로 판매가 되고있는데, 각 패키지 별 차이점은 다음과 같다. (가격: [다나와](https://www.danawa.com) 최저가 기준)
 <style type="text/css">
 .tg  {border-collapse:collapse;border-spacing:0;border-color:#ccc;}
 .tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:0px;overflow:hidden;word-break:normal;border-top-width:1px;border-bottom-width:1px;border-color:#ccc;color:#333;background-color:#fff;}
