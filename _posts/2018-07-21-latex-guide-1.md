@@ -11,7 +11,6 @@ tag:
   - "Latex"
   - "공대"
   - "논문"
-  = "가이드"
 toc: true
 last_modified_at: 2018-07-21
 comments: true
