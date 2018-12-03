@@ -17,7 +17,7 @@ mathjax: true
 
 # InfoVAE : Balancing Learning and Inference in Variational Autoencoder
 
-2018 / arXiv.org / Shengjia Zhao, Jiaming Song, Stefano Ermon
+**2018 / arXiv.org / Shengjia Zhao, Jiaming Song, Stefano Ermon**
 
 지난 몇년간 ML 분야에서는 VAE(Variational Autoencoder)와 GAN(Generative Adversarial Network)를 필두로 generative model에 대한 연구가 활발하게 진행되었다.
 
@@ -59,7 +59,7 @@ $$ \mathcal{L}\_{ELBO}\equiv -D_{KL}(q_\phi(x,z)\parallel p_\theta(x,z))\tag{2}$
 
 ## 3. Two problems of VAE
 
-## 3.1. Amortized inference failures
+### 3.1. Amortized inference failures
 
 이상적인 조건 하에서, ELBO 최적화는 위의 두가지 목표를 달성 할 수 있다 (with sufficiently flexible model families for $p_\theta(x\mid z)$ and $q_\phi(z\mid x)$ over $\theta , \phi$).
 
@@ -106,7 +106,7 @@ $$D_{KL}(\mathcal{N}(0,I), \mathcal{N}(\epsilon,I))=n\epsilon^2/2$$
 - Inference 성능의 약화
 - 트레이닝 데이터에 대한 오버피팅
 
-## 3.2. The information preference propoerty
+### 3.2. The information preference propoerty
 
 PixelRNN/PixelCNN과 같은 복잡한 $p_\theta(x\mid z )$ 복원 방법들은 natural image dataset의 샘플 퀄리티를 크게 향상시켰으나, latent variable $z$를 무시하는 새로운 문제($x$와 $z$의 mutual information이 굉장히 작아지게되는) 문제가 발생하게 되었다.
 직관적인 원인은 $z$에 상관없이 학습된 $p_\theta(x\mid z )$가 동일하다는 것인데, 의미있는 latent variable을 찾는 목적 달성이 전혀 이뤄지지 않게 되는 것이다.
