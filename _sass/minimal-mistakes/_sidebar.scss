@@ -67,8 +67,9 @@
   margin-bottom: 1em;
 
   @include breakpoint($large) {
-    position: absolute;
-    top: 0;
+    position: sticky /*absolute*/;
+    float: right;
+    top: 2em;
     right: 0;
     width: $right-sidebar-width-narrow;
     margin-right: -1 * $right-sidebar-width-narrow;
@@ -307,4 +308,3 @@
     margin-right: initial;
   }
 }
-
