@@ -1,5 +1,5 @@
 ---
-title: "[Jekyll] 깃허브 페이지를 통한 블로그 생성 첫걸음"
+title: "[Jekyll] 깃허브 페이지를 통한 블로그 생성 첫걸음 (Minimal Mistakes theme 기반)"
 strapline: "First steps to publish a Jekyll based blog through GitHub Pages"
 description: "깃허브 (GitHub)를 통한 지킬 (Jekyll) 기반 블로그 생성"
 header:
@@ -11,9 +11,12 @@ tag:
   - "깃허브"
   - "블로그"
 toc: true
-last_modified_at: 2018-06-20
+last_modified_at: 2018-01-10
 comments: true
 ---
+# Minimal Mistakes theme 기반 깃허브 페이지 블로그 개설하기
+
+## 0. 개설하기 전에...
 
   개인적으로 블로그를 하나 운영하고 싶어서 네이버 블로그, 티스토리, 카카오 페이지 등등 유명 플랫폼들을 살펴봤는데, 티스토리는 초대장 받기가 힘드네요. 가능하면 마크다운 (Markdown) 기반으로 수식도 추가해가면서 깔끔하게 포스팅 하고싶었는데,  카카오 같은 경우는 마크다운 방식으로 돌아가긴 하지만 수식 넣는것도 힘든 것 같고 작가 등록이 필요합니다.
 
@@ -100,7 +103,7 @@ author:
 
 1. 깃허브 (GitHub) 가입하기
 2. 원하는 블로그 테마 포크하기
-3. 저장소 (Repository) 이름 변경 및 _conf.yml 파일 수정하기
+3. 저장소 (Repository) 이름 변경 및 \_conf.yml 파일 수정하기
 
 P.S. 추가적으로 깃허브 저장소에서 직접적으로 코드를 수정하지 않고 개인 컴퓨터로 블로그 구성 변경 등 이것저것 테스트를 하고싶다면 다음의 과정을 거쳐 블로그를 로컬하게 돌려보면됩니다.
 

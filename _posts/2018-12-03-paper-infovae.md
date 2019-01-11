@@ -39,7 +39,7 @@ VAE와 목적함수 ELBO에 대해 간략하게 살펴보면 다음과 같다.
 
 - Input variable : $x \in X$
 - Latent variable : $z \in Z$
-- Data distribution conditioned over $z$ : $p_{\theta}(x\mid z)$ 
+- Data distribution conditioned over $z$ : $p_{\theta}(x\mid z)$
 - Prior distribution : $p(z)$
 - True underlying distribution : $p_D (x)$
 
@@ -51,11 +51,11 @@ $$\mathbb{E}_{P_D(x)}[\log p_\theta(x)]=\mathbb{E}_{p_D(x)}[\log\mathbb{E}_{p(z)
 
 결과적으로 VAE에서 사용되는 ELBO는 다음과 같다.
 
-$$\mathcal{L}\_{ELBO}=\mathbb{E}_{p_D(x)}[-D_{KL}(q_\phi(z\mid x)\parallel  p(z))+\mathbb{E}_{q_\phi(z\mid x)}[\log p_\theta(x\mid z )]]\leq\mathbb{E}_{p_D(x)}[\log p_\theta(x)]$$
+$$\mathcal{L}_{ELBO}=\mathbb{E}_{p_D(x)}[-D_{KL}(q_\phi(z\mid x)\parallel  p(z))+\mathbb{E}_{q_\phi(z\mid x)}[\log p_\theta(x\mid z )]]\leq\mathbb{E}_{p_D(x)}[\log p_\theta(x)]$$
 
 또한 $p_\theta(x,z) \equiv p(z)p_\theta(x\mid z), q_\phi(x,z)\equiv p_D(x)q_\phi(z\mid x)$로 정의하면 ELBO는 다음의 식으로 변형 될 수 있다.
 
-$$ \mathcal{L}\_{ELBO}\equiv -D_{KL}(q_\phi(x,z)\parallel p_\theta(x,z))\tag{2}$$ $$=-D_{KL}(p_D(x)\parallel p_\theta(x))-\mathbb{E}_{p_D(x)}[D_{KL}(q_\phi(z\mid x)\parallel p_\theta(z\mid x))]\tag{3}$$ $$=-D_{KL}(q_\phi(z)\parallel p(z))-\mathbb{E}_{q_\phi(z)}[D_{KL}(q_\phi(x\mid z)\parallel p_\theta(x\mid z))]\tag{4}$$
+$$ \mathcal{L}_{ELBO}\equiv -D_{KL}(q_\phi(x,z)\parallel p_\theta(x,z))\tag{2}$$ $$=-D_{KL}(p_D(x)\parallel p_\theta(x))-\mathbb{E}_{p_D(x)}[D_{KL}(q_\phi(z\mid x)\parallel p_\theta(z\mid x))]\tag{3}$$ $$=-D_{KL}(q_\phi(z)\parallel p(z))-\mathbb{E}_{q_\phi(z)}[D_{KL}(q_\phi(x\mid z)\parallel p_\theta(x\mid z))]\tag{4}$$
 
 ## 3. Two problems of VAE
 
@@ -82,14 +82,14 @@ $x$의 차원이 $z$에 비해 높기때문에, 최적화 수행 시 data fittin
 
 ### 3.1.1 Good ELBO values do not imply accurate inference
 
-ELBO를 재구성하면 log likelihood (reconstruction) term인 $\mathcal{L}\_{\text{AE}}$
-와 regularization term $\mathcal{L}\_{\text{REG}}$로 구성되어있는 것을 알 수 있다.
+ELBO를 재구성하면 log likelihood (reconstruction) term인 $\mathcal{L}_{\text{AE}}$
+와 regularization term $\mathcal{L}_{\text{REG}}$로 구성되어있는 것을 알 수 있다.
 
 ![ELBO1](/assets/images/infovae1.png)
 
-먼저 reconstruction term인 $\mathcal{L}\_{AE}$만 최적화하는 경우를 살펴보면, inferred latent variable $z\sim q_\phi(z\mid x)$로부터 observing data point $x$의 log likelihood를 최대화하게 된다. 유한한 데이터 셋 $\{x_1,...,x_N\}$으로부터, $q_\phi$가 $x_i \neq x_j$일때 $q_\phi(z\mid x_i)$와 $q_\phi(z\mid x_j)$가 disjoint support를 갖는 distribution이라하면, $p_\theta(x\mid z )$는 각각의 $q_\phi(z\mid x_i)$로부터 학습 할 때 $x_i$로 집중되어있는 형태의 분포를 배운다는 것이다. 이로인해 $p_\theta(x\mid z )$는 Dirac delta distribution를 따라가는 경향이 발생하기도하는데, 부적절한 $z$를 학습하는데도 불구하고 $\mathcal{L}\_{AE}$는 $+\infty$로 간다.
+먼저 reconstruction term인 $\mathcal{L}_{AE}$만 최적화하는 경우를 살펴보면, inferred latent variable $z\sim q_\phi(z\mid x)$로부터 observing data point $x$의 log likelihood를 최대화하게 된다. 유한한 데이터 셋 $\{x_1,...,x_N\}$으로부터, $q_\phi$가 $x_i \neq x_j$일때 $q_\phi(z\mid x_i)$와 $q_\phi(z\mid x_j)$가 disjoint support를 갖는 distribution이라하면, $p_\theta(x\mid z )$는 각각의 $q_\phi(z\mid x_i)$로부터 학습 할 때 $x_i$로 집중되어있는 형태의 분포를 배운다는 것이다. 이로인해 $p_\theta(x\mid z )$는 Dirac delta distribution를 따라가는 경향이 발생하기도하는데, 부적절한 $z$를 학습하는데도 불구하고 $\mathcal{L}_{AE}$는 $+\infty$로 간다.
 
-논문에서는 간단한 예시로 $x\in \{-1,1\}$인 경우, true prior $p(z)$와 $q_\phi(z\mid x)$의 모델링에 대해 살펴보았다. $x=\pm1$로 conditioned되어있을 때 $q_phi$의 평균과 분산이 각각 $\pm\infty,+0$인 경우 $\mathcal{L}\_{ELBO}$가 $+\infty$로 최대화되는 것을 증명하였다 (이때 $q_\phi(z\mid x)$와   $p_\theta(z\mid x)$의 KL divergence 또한 $+\infty$가 된다).
+논문에서는 간단한 예시로 $x\in \{-1,1\}$인 경우, true prior $p(z)$와 $q_\phi(z\mid x)$의 모델링에 대해 살펴보았다. $x=\pm1$로 conditioned되어있을 때 $q_phi$의 평균과 분산이 각각 $\pm\infty,+0$인 경우 $\mathcal{L}_{ELBO}$가 $+\infty$로 최대화되는 것을 증명하였다 (이때 $q_\phi(z\mid x)$와   $p_\theta(z\mid x)$의 KL divergence 또한 $+\infty$가 된다).
 
 즉  ELBO를 최대화하는 쪽으로 잘 학습함에도 불구하고, 쓸모없는 inference $q_\phi(z)$를 (ture posterior와 상관없는)를 얻는다는 것이다.
 
@@ -113,7 +113,7 @@ PixelRNN/PixelCNN과 같은 복잡한 $p_\theta(x\mid z )$ 복원 방법들은 n
 
 논문에서는 이러한 현상을 information preference problem이라 하며, 이와 연관해서 ELBO에 대한 다음과 같은 해석을 내놓았다. 요약하면 latent variable $z$을 활용하지 않더라도도 0으로 최적화가 가능하다는 것이다.  
 
-ELBO의 재구성 식인 (3)을 보면 $-D\_{KL}(p_D(x)\parallel  p_\theta(x))$과 $-\mathbb{E}\_{p_D(x)}[D\_{KL}(q_\phi(z\mid x)\parallel  p_\theta(z\mid x))]$ 두 가지 term으로 구성되어있는데 다음을 통해 $x$와 $z$ 사이의 연관성이 없어도 global optimum을 얻는 것을 보였다.
+ELBO의 재구성 식인 (3)을 보면 $-D_{KL}(p_D(x)\parallel  p_\theta(x))$과 $-\mathbb{E}_{p_D(x)}[D_{KL}(q_\phi(z\mid x)\parallel  p_\theta(z\mid x))]$ 두 가지 term으로 구성되어있는데 다음을 통해 $x$와 $z$ 사이의 연관성이 없어도 global optimum을 얻는 것을 보였다.
 
 ![infovae2](/assets/images/infovae2.png)
 
@@ -131,11 +131,11 @@ ELBO의 재구성 식인 (3)을 보면 $-D\_{KL}(p_D(x)\parallel  p_\theta(x))$�
 
 (5)와 (6)은 동일한 수식인데, (6)의 경우 효율적인 최적화가 가능하다고 한다.
 (6)의 마지막 $D_{KL}(q_\phi(z)\parallel  p(z))$ term 계산에서 어려움이 있을 수 있는데 ($\log q_\phi(z)$ 파트), unbiased sampling이 가능하여 lieklihood free optimization technique을 활용 할 수 있다.
-나아가 다음의 조건에서 KL-divergence 외에 다른 strict divergence $D(q_\phi(z)\parallel  p(z))$를 사용한 목적함수 $\hat{\mathcal{L}}\_{\text{infoVAE}}$로 교체하더라도 최적화에 전혀 문제가 되지 않음을 보였다.
+나아가 다음의 조건에서 KL-divergence 외에 다른 strict divergence $D(q_\phi(z)\parallel  p(z))$를 사용한 목적함수 $\hat{\mathcal{L}}_{\text{infoVAE}}$로 교체하더라도 최적화에 전혀 문제가 되지 않음을 보였다.
 
 ![infovae5](/assets/images/infovae5.png)
 
-${\mathcal{L}}\_{\text{infoVAE}}$은 이전에 발표된 여러 모델의 일반화된 버전으로 볼 수 있다. 예를들어
+${\mathcal{L}}_{\text{infoVAE}}$은 이전에 발표된 여러 모델의 일반화된 버전으로 볼 수 있다. 예를들어
 - $\alpha=0, \lambda=1$ : 기존 ELBO 모델
 - $\lambda>0, \alpha+\lambda-1=0$, KL-divergence : $\beta$-VAE.
 - $\alpha=1,\lambda=1$, Jensen Shannon divergence : Adversarial Autoencoder
