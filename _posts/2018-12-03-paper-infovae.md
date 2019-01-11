@@ -82,14 +82,14 @@ $x$의 차원이 $z$에 비해 높기때문에, 최적화 수행 시 data fittin
 
 ### 3.1.1 Good ELBO values do not imply accurate inference
 
-ELBO를 재구성하면 log likelihood (reconstruction) term인 $\mathcal{L}_{\text{AE}}$
-와 regularization term $\mathcal{L}_{\text{REG}}$로 구성되어있는 것을 알 수 있다.
+ELBO를 재구성하면 log likelihood (reconstruction) term인 $$\mathcal{L}_{\text{AE}}$$
+와 regularization term $$\mathcal{L}_{\text{REG}}$$로 구성되어있는 것을 알 수 있다.
 
 ![ELBO1](/assets/images/infovae1.png)
 
-먼저 reconstruction term인 $\mathcal{L}_{AE}$만 최적화하는 경우를 살펴보면, inferred latent variable $z\sim q_\phi(z\mid x)$로부터 observing data point $x$의 log likelihood를 최대화하게 된다. 유한한 데이터 셋 $\{x_1,...,x_N\}$으로부터, $q_\phi$가 $x_i \neq x_j$일때 $q_\phi(z\mid x_i)$와 $q_\phi(z\mid x_j)$가 disjoint support를 갖는 distribution이라하면, $p_\theta(x\mid z )$는 각각의 $q_\phi(z\mid x_i)$로부터 학습 할 때 $x_i$로 집중되어있는 형태의 분포를 배운다는 것이다. 이로인해 $p_\theta(x\mid z )$는 Dirac delta distribution를 따라가는 경향이 발생하기도하는데, 부적절한 $z$를 학습하는데도 불구하고 $\mathcal{L}_{AE}$는 $+\infty$로 간다.
+먼저 reconstruction term인 $$\mathcal{L}_{AE}$$만 최적화하는 경우를 살펴보면, inferred latent variable $z\sim q_\phi(z\mid x)$로부터 observing data point $x$의 log likelihood를 최대화하게 된다. 유한한 데이터 셋 $\{x_1,...,x_N\}$으로부터, $q_\phi$가 $x_i \neq x_j$일때 $q_\phi(z\mid x_i)$와 $q_\phi(z\mid x_j)$가 disjoint support를 갖는 distribution이라하면, $p_\theta(x\mid z )$는 각각의 $q_\phi(z\mid x_i)$로부터 학습 할 때 $x_i$로 집중되어있는 형태의 분포를 배운다는 것이다. 이로인해 $p_\theta(x\mid z )$는 Dirac delta distribution를 따라가는 경향이 발생하기도하는데, 부적절한 $z$를 학습하는데도 불구하고 $$\mathcal{L}_{AE}$$는 $+\infty$로 간다.
 
-논문에서는 간단한 예시로 $x\in \{-1,1\}$인 경우, true prior $p(z)$와 $q_\phi(z\mid x)$의 모델링에 대해 살펴보았다. $x=\pm1$로 conditioned되어있을 때 $q_phi$의 평균과 분산이 각각 $\pm\infty,+0$인 경우 $\mathcal{L}_{ELBO}$가 $+\infty$로 최대화되는 것을 증명하였다 (이때 $q_\phi(z\mid x)$와   $p_\theta(z\mid x)$의 KL divergence 또한 $+\infty$가 된다).
+논문에서는 간단한 예시로 $x\in \{-1,1\}$인 경우, true prior $p(z)$와 $q_\phi(z\mid x)$의 모델링에 대해 살펴보았다. $x=\pm1$로 conditioned되어있을 때 $q_phi$의 평균과 분산이 각각 $\pm\infty,+0$인 경우 $$\mathcal{L}_{ELBO}$$가 $+\infty$로 최대화되는 것을 증명하였다 (이때 $q_\phi(z\mid x)$와   $p_\theta(z\mid x)$의 KL divergence 또한 $+\infty$가 된다).
 
 즉  ELBO를 최대화하는 쪽으로 잘 학습함에도 불구하고, 쓸모없는 inference $q_\phi(z)$를 (ture posterior와 상관없는)를 얻는다는 것이다.
 
@@ -113,7 +113,7 @@ PixelRNN/PixelCNN과 같은 복잡한 $p_\theta(x\mid z )$ 복원 방법들은 n
 
 논문에서는 이러한 현상을 information preference problem이라 하며, 이와 연관해서 ELBO에 대한 다음과 같은 해석을 내놓았다. 요약하면 latent variable $z$을 활용하지 않더라도도 0으로 최적화가 가능하다는 것이다.  
 
-ELBO의 재구성 식인 (3)을 보면 $-D_{KL}(p_D(x)\parallel  p_\theta(x))$과 $-\mathbb{E}_{p_D(x)}[D_{KL}(q_\phi(z\mid x)\parallel  p_\theta(z\mid x))]$ 두 가지 term으로 구성되어있는데 다음을 통해 $x$와 $z$ 사이의 연관성이 없어도 global optimum을 얻는 것을 보였다.
+ELBO의 재구성 식인 (3)을 보면 $-D_{KL}(p_D(x)\parallel  p_\theta(x))$과 $$-\mathbb{E}_{p_D(x)}[D_{KL}(q_\phi(z\mid x)\parallel  p_\theta(z\mid x))]$$ 두 가지 term으로 구성되어있는데 다음을 통해 $x$와 $z$ 사이의 연관성이 없어도 global optimum을 얻는 것을 보였다.
 
 ![infovae2](/assets/images/infovae2.png)
 
@@ -121,7 +121,7 @@ ELBO의 재구성 식인 (3)을 보면 $-D_{KL}(p_D(x)\parallel  p_\theta(x))$�
 
 위의 두 문제 (3.1,3.2)를 해결하기위해 새로운 학습 목적함수를 제안했다. 즉 원래 ELBO 수식으로부터
 
-1) Scaling parameter $\lambda$를 통한 $x$에 편중되는 문제 해결 (3.1)
+1) Scaling parameter $\lambda$를 통한 $x$에 편중되는 문제 해결 (3.1)  
 2) Mutual information maximization term을 추가하여 $x,z$ 사이의 연관성 문제를 해결 (3.2)
 
 따라서 새로운 목적함수는
@@ -172,7 +172,9 @@ ELBO의 경우 ideal case와 큰 차이가 나타나는 것을 확인 할 수 �
 
 MNIST 데이터셋에 대한 VAE와 InfoVAE의 reconstruciton, generation 이미지이다.
 상단은 ELBO 그래프인데, sharp한 reconstruction들을 생성하지만 generation 성능이 상당히 나쁜 것을 볼 수 있다. 따라서 복원 오차를 줄이는데에 generalization 성능 (learning good prior $z$)이 희생 된 것으로 보인다. 반면에 하단의 InfoVAE결과는 reconstruciton과 generation 결과 모두 숫자에 근접한 이미지들이 생성되는 것을 확인 할 수 있다.
-__________________________________________________________________
+
+---
+
 ## 요약
 
 - Generative model에서는 sample generation도 중요하지만 잘 설명이 되는 latent variable $z$의 학습도 매우 중요하다.
