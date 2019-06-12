@@ -11,19 +11,21 @@ His research interests are transactive energy, energy data analysis, energy fore
 
 ---
 
-서강대학교 전자공학과 융합통신망 연구실에서 박사 과정으로 재학 중입니다.
+서강대학교 전자공학과 융합통신망 연구실 / 박사 과정.
 
-주요 연구 분야는 스마트 그리드, 기계 학습, 데이터 분석입니다.
+주요 연구 분야 : 스마트 그리드, 에너지 데이터 분석, 머신 러닝.
 
 ---
 ## Publications
 
 ### Journal papers
 
+- [**Machine Learning based Lithium-Ion Battery Capacity Estimation Exploiting Charging Features**](https://ieeexplore.ieee.org/document/8731962/)
+  - Y. Choi, **S. Ryu**, K. Park and H. Kim, IEEE Access, *Early Access*
 - [**Gaussian Residual Bidding based Coalition for Two-settlement Renewable Energy Market**](https://ieeexplore.ieee.org/document/8424158/)
   - **S. Ryu**, S. Bae, J. Lee and H. Kim, IEEE Access, pp.43029 - 43038, Aug. 2018
 - [**Robust Operation of Energy Storage System with Uncertain Load Profiles**](http://nice.sogang.ac.kr/wordpress/uploads/shortbio/Documents/J31_energies-10-00416_jk_pr.pdf)
-  - J. K. Kim, Y. Choi, **S. Ryu**, and H. Kim, Energies, pp.1-15, Mar. 2017.
+  - J. K. Kim, Y. Choi, **S. Ryu** and H. Kim, Energies, pp.1-15, Mar. 2017.
 
 - [**Deep Neural Network based Demand Side Short-Term Load Forecasting**](http://nice.sogang.ac.kr/wordpress/uploads/shortbio/Documents/J30_energies2016_sh_pr.pdf)
   -  **S. Ryu**, J. Noh, and H. Kim, Energies, pp.1-20, Jan. 2017.
@@ -36,7 +38,10 @@ His research interests are transactive energy, energy data analysis, energy fore
 
 
 ### Selected Conference Proceedings
-
+- [**협력적 게임 이론 기반 분산 신재생 발전 자원의 통합 운용 및 전력 시장 참여에 대한 연구**](http://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE08003326)
+  - **류승형**, 김홍석, 한국통신학회 동계종합학술발표회 논문집, 2019  
+- [**ResNet과 LSTM을 이용한 전력 수요 예측**](http://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE08003359)
+  - 최현근, **류승형**, 김홍석, 한국통신학회 동계종합학술발표회 논문집, 2019
 - [**Short-Term Load Forecasting based on ResNet and LSTM**](https://ieeexplore.ieee.org/abstract/document/8587554/)
   - H. Choi, **S. Ryu** and H. Kim, IEEE SmartGridComm, 2018, pp.1-6.
 
