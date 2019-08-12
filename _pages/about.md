@@ -19,9 +19,10 @@ His research interests are transactive energy, energy data analysis, energy fore
 ## Publications
 
 ### Journal papers
-
+- [**Convolutional Autoencoder based Feature Extraction and Clustering for Customer Load Analysis**]()
+  - **S. Ryu**, H. Choi, H. Lee and H. Kim, **Transactions on Power Systems**, *to be published*
 - [**Machine Learning based Lithium-Ion Battery Capacity Estimation Exploiting Charging Features**](https://ieeexplore.ieee.org/document/8731962/)
-  - Y. Choi, **S. Ryu**, K. Park and H. Kim, IEEE Access, *Early Access*
+  - Y. Choi, **S. Ryu**, K. Park and H. Kim, IEEE Access, pp.75143 - 75152, Jun. 2019
 - [**Gaussian Residual Bidding based Coalition for Two-settlement Renewable Energy Market**](https://ieeexplore.ieee.org/document/8424158/)
   - **S. Ryu**, S. Bae, J. Lee and H. Kim, IEEE Access, pp.43029 - 43038, Aug. 2018
 - [**Robust Operation of Energy Storage System with Uncertain Load Profiles**](http://nice.sogang.ac.kr/wordpress/uploads/shortbio/Documents/J31_energies-10-00416_jk_pr.pdf)
