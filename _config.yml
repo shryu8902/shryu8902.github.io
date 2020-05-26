@@ -102,7 +102,7 @@ analytics:
 author:
   name             : "류승형"
   avatar           : "/assets/images/new_bio.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "서강대학교 전자공학과 NICE Lab"
+  bio              : "한국원자력연구원 지능형컴퓨팅연구실"
   location         : "세종특별자치시"
   email            : "shryu8902@naver.com"
   uri              : "https://scholar.google.co.kr/citations?user=eRyqoEcAAAAJ&hl=en"
