@@ -6,12 +6,12 @@ toc: true
 
 ## Biography
 
-Seunghyoung Ryu received the B.S. and M.S. degree in the Electronic Engineering from Sogang University, South Korea in 2014 and 2016, respectively. He is working toward the Ph.D. degree in Electronic Engineering at the same university.
+Seunghyoung Ryu received the B.S., M.S. and Ph.D degree in the Electronic Engineering from Sogang University, South Korea in 2014, 2016, and 2020, respectively. He is currently a Senior Research Engineer of the Intelligent Computing Lab, Korea Atomic Energy Research Institute, South Korea. 
 His research interests are transactive energy, energy data analysis, energy forecasting, machine learning and artficial intelligence in smart grid.
 
 ---
 
-서강대학교 전자공학과 융합통신망 연구실 / 박사 과정.
+한국원자력연구원 지능형컴퓨팅연구실 / 선임연구원
 
 주요 연구 분야 : 스마트 그리드, 에너지 데이터 분석, 머신 러닝.
 
@@ -19,8 +19,10 @@ His research interests are transactive energy, energy data analysis, energy fore
 ## Publications
 
 ### Journal papers
-- [**Convolutional Autoencoder based Feature Extraction and Clustering for Customer Load Analysis**]()
-  - **S. Ryu**, H. Choi, H. Lee and H. Kim, **Transactions on Power Systems**, *to be published*
+- [**Denoising Autoencoder-Based Missing Value Imputation for Smart Meters**](https://ieeexplore.ieee.org/abstract/document/9016055)
+  - **S. Ryu**, M. Kim and H. Kim, **IEEE Access**, pp.40656 - 40666, Feb. 2020 
+- [**Convolutional Autoencoder based Feature Extraction and Clustering for Customer Load Analysis**](https://ieeexplore.ieee.org/abstract/document/8807267)
+  - **S. Ryu**, H. Choi, H. Lee and H. Kim, **Transactions on Power Systems**, Aug. 2019
 - [**Machine Learning based Lithium-Ion Battery Capacity Estimation Exploiting Charging Features**](https://ieeexplore.ieee.org/document/8731962/)
   - Y. Choi, **S. Ryu**, K. Park and H. Kim, IEEE Access, pp.75143 - 75152, Jun. 2019
 - [**Gaussian Residual Bidding based Coalition for Two-settlement Renewable Energy Market**](https://ieeexplore.ieee.org/document/8424158/)
