@@ -20,9 +20,12 @@ His research interests are transactive energy, energy data analysis, energy fore
 
 ### Journal papers
 
-- [Probabilistic deep learning model as a tool for supporting the fast simulation of a thermal–hydraulic code](https://www.sciencedirect.com/science/article/pii/S095741742200392X)
+- [**Development of deep autoencoder-based anomaly detection system for HANARO**](https://www.sciencedirect.com/science/article/pii/S1738573322004909#)
+  - **S Ryu**, B Jeon, H Seo, M Lee, J Shin, Y Yu, **Nuclear Engineering and Technology**, Accepted, 2022
+
+- [**Probabilistic deep learning model as a tool for supporting the fast simulation of a thermal–hydraulic code**](https://www.sciencedirect.com/science/article/pii/S095741742200392X)
   - **S Ryu**, H Kim, SG Kim, K Jin, J Cho, J Park, **Expert Systems with Applications**, Aug. 2022
-- [Quantile Autoencoder with Abnormality Accumulation for Anomaly Detection of Multi-variate Sensor Data](https://ieeexplore.ieee.org/abstract/document/9810961)
+- [**Quantile Autoencoder with Abnormality Accumulation for Anomaly Detection of Multi-variate Sensor Data**](https://ieeexplore.ieee.org/abstract/document/9810961)
   - **S Ryu**, J Yim, J Seo, Y Yu, H Seo, **IEEE Access**, Jun. 2022
 - [**An approach to constructing effective training data for a classification model to evaluate the reliability of a passive safety system**](https://www.sciencedirect.com/science/article/pii/S0951832022001119)
   - K Jin, H Kim, **S Ryu**, S Kim, J Park, **Reliability Engineering & System Safety**, Jun. 2022 
@@ -73,31 +76,24 @@ His research interests are transactive energy, energy data analysis, energy fore
   - 최현근, **류승형**, 김홍석, 한국통신학회 동계종합학술발표회 논문집, 2019
 - [**Short-Term Load Forecasting based on ResNet and LSTM**](https://ieeexplore.ieee.org/abstract/document/8587554/)
   - H. Choi, **S. Ryu** and H. Kim, IEEE SmartGridComm, 2018, pp.1-6.
-
 - [**Residential Load Profile Clustering via Deep Convolutional Autoencoder**](https://ieeexplore.ieee.org/abstract/document/8587454/)
   -  **S.Ryu**, H. Choi, H. Lee, H. Kim, and V. W.S. Wong, IEEE SmartGridComm, 2018, pp 1-6.
-
 - **Convolutional Autoencoder 기반 소규모 수용가 부하 프로파일 클러스터링에 대한 연구**
   -   **류승형**, 최현근, 이효섭, 김홍석, 한국통신학회 학술대회논문집, 22-24, 2017
-
 - **Coalition-based Bidding Strategies for Integrating Renewable Energy Sources in Electricity Market**
   -   S. Bae, **S. Ryu** and H. Kim, IEEE Power and Energy Society General Meeting (PES-GM), 2017, pp.1-5.
-
 - **시간 지연을 고려한 소규모 수용가 부하 프로파일 클러스터링**
   - **류승형**, 김홍석, JCCI, 2017
-
 - **Deep Neural Network Based Demand Side Short Term Load Forecasting**
   - **S. Ryu**, J. Noh and  H. Kim,  IEEE SmartGridComm, 2016, pp.1-6
-
 - **심층신경망 기반 전력수요예측 모델에 대한 연구**
   -  **류승형**, 노재구, 김홍석, 한국통신학회 학술대회논문집, 488-489, 2016
-
 - **Hierarchical Clustering of Load Profile Database in Understanding of Korean Standard Industrial Classification**
   -  **S. Ryu**, H. Kim, D. Oh, J.-i. Lee and J. Noh,  International Smart Grid Conference (ISGC), Oct. 2015
-
 - **A Framework for Baseline Load Estimation in Demand Response: Data Mining Approach**
   -   S. Park, **S. Ryu**, Y. Choi and H. Kim, IEEE SmartGridComm, 2014, pp.1-6
 ---
+
 ## Invited Talks
 
 - 딥러닝 기반 이상탐지 기술, 재난안전 데이터&AI 워크샵, KISTI부울경지원, 22.07
